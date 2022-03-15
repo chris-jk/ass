@@ -7,27 +7,22 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
+  final _text = 'Hello World';
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Text Changer'),
+          title: const Text('Text Changer 1.0'),
         ),
         body: Container(
           child: Center(
             child: Column(
               children: [
                 Text(
-                  'Hello World',
+                  _text,
                   style: TextStyle(
                     fontSize: 30,
                   ),
