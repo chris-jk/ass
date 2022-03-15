@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'text_output.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 // App
 class MyApp extends StatefulWidget {
